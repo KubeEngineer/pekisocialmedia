@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/herSatirLiner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/kullanici_background">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/kullanicilarprofilResmi"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/people"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="2dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/adSoyadProfil"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="Adi"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/KullaniciAdiProfil"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="@string/kullanici_adi"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/arkadasEkle"
+            android:layout_width="30dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:background="@drawable/plus"
+            android:visibility="invisible"/>
+    </LinearLayout>
+</RelativeLayout>

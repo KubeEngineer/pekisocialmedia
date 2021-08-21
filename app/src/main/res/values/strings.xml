@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_names">PEKİ</string>
+    <string name="kayitol">KAYIT OL</string>
+    <string name="hesabim_var">HESABIM VAR</string>
+    <string name="kullanici_adi">Kullanıcı Adı</string>
+    <string name="sifre">Şifrenizi Giriniz</string>
+    <string name="tarafindan">created by PEKİ</string>
+    <string name="girisYap">GİRİŞ YAP</string>
+    <string name="kayit_ol">KAYIT OL.</string>
+    <string name="sifremi_unuttum">ŞİFREMİ UNUTTUM?</string>
+    <string name="ad">Ad</string>
+    <string name="soyad">Soyad</string>
+    <string name="eposta">E-posta</string>
+    <string name="hesabimvar">Zaten bir hesabım var?</string>
+    <string name="ara">Ara</string>
+    <string name="mesaj">Mesajlar</string>
+    <string name="kullanici_guncelle">Kullanıcı adını değiştir</string>
+    <string name="eposta_guncelle">Epostanı değiştir</string>
+    <string name="sifre_guncelle">Şifreni değiştir</string>
+    <string name="degisiklikleri_kaydet">Kaydet</string>
+    <string name="adGuncelle">Ad değiştir</string>
+    <string name="soyadGuncelle">Soyad değiştir</string>
+    <string name="cıkısYap">Çıkış Yap</string>
+    <string name="engelle">Engelle</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

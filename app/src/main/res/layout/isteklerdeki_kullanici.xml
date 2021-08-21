@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bildirim_kutusu_background">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/kullanicilarprofilResmi"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/people"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="2dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/adSoyadProfil"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="Adi ve soyad"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/KullaniciAdiProfil"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="@string/kullanici_adi"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+                <!--android:visibility="invisible"-->/>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/istekKabulEtmeButonu"
+        android:layout_toLeftOf="@id/istekReddetmeButonu"
+        android:layout_centerVertical="true"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/tick"
+        android:layout_marginTop="20dp" />
+    <ImageView
+        android:id="@+id/istekReddetmeButonu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/close"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"/>
+</RelativeLayout>

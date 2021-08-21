@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.YorumActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/yorumToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_arrow"
+        app:title="Yorumlar"
+        app:titleTextColor="@android:color/white"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/yorumToolbar"
+        android:padding="8dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/yorumRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/yorumGonderLayout"/>
+        <RelativeLayout
+            android:id="@+id/yorumGonderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/yorum_background"
+            android:padding="1dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/yorumIcerik"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/yorumGonder"
+                android:layout_marginLeft="15dp"
+                android:hint="yorum yazmak için dokununuz"
+                android:textColor="@android:color/white"
+                android:textColorHint="#D8FFFFFF"
+                android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/yorumGonder"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/send_yeni"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

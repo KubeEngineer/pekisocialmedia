@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<android.support.v4.widget.NestedScrollView
+
+    android:id="@+id/my_scrolView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:nestedScrollingEnabled="true"
+            android:id="@+id/digerprofilUstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/DigerarkadaslarProfilButon"
+                    android:layout_width="75dp"
+                    android:layout_height="97dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/profil_buton_background"
+                    android:text="0\nArkadaşlar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/DigerprofilResmi1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:civ_border_color="@android:color/white"
+                    android:layout_weight="1"
+                    app:civ_border_width="3dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/people"/>
+                <Button
+                    android:id="@+id/DigerpostlarProfilButon"
+                    android:layout_width="75dp"
+                    android:layout_height="97dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/profil_buton_background"
+                    android:text="0\nPostlar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/DigerprofildekiProfilIsmi"
+                android:layout_below="@id/profilUstLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="FULL NAME"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/IstekAtmaButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profildekiProfilIsmi"
+                android:text="Arkadaslik isteği gonder"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/genel_buton"
+                />
+            <Button
+                android:id="@+id/IstekDegerlendirmeButonu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arkadaşlık isteği kabul."
+                android:layout_below="@+id/IstekAtmaButton"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/genel_buton"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/DigerprofildekiPostList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/digerprofilUstLayout"
+            android:scrollbars="vertical"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1060826335673",
+    "firebase_url": "https://pekimesajlasma-97d53.firebaseio.com",
+    "project_id": "pekimesajlasma-97d53",
+    "storage_bucket": "pekimesajlasma-97d53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060826335673:android:cdb79be653b8cfd9fdce68",
+        "android_client_info": {
+          "package_name": "com.example.chatpeki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060826335673-f0es2tskp3p22u1vor9a50ijgmme6i9g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatpeki",
+            "certificate_hash": "3b406660f2ee3d554b24332898cbd8a9324becbf"
+          }
+        },
+        {
+          "client_id": "1060826335673-4ml0dhhqr9kpb8padbfm11vnidu3lrqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaT_mdBcKSOxiYZKeQeo_m2P2DpxB2Fk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060826335673-4ml0dhhqr9kpb8padbfm11vnidu3lrqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

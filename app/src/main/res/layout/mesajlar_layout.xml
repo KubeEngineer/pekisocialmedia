@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/people"
+        android:id="@+id/mesaj_profil_resmi"
+        android:layout_marginTop="10dp"
+       />
+
+    <TextView
+        android:id="@+id/alici_mesaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alicimesajları burada görünecek"
+        android:layout_toEndOf="@+id/mesaj_profil_resmi"
+        android:layout_marginTop="20dp"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:background="@drawable/mesaj_background_diger"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="8dp"
+
+        />
+    <ImageView
+        android:id="@+id/mesaj_gonderen_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="4dp"/>
+    <ImageView
+        android:id="@+id/mesaj_gonderen_pdf_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="4dp"/>
+
+    <ImageView
+        android:id="@+id/mesaj_alan_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:scaleType="centerCrop" />
+    <ImageView
+        android:id="@+id/mesaj_alan_pdf_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/gonderen_mesaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gonderilen mesaj"
+        android:layout_alignParentTop="@+id/alici_mesaj"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/mesaj_background"
+        android:textColor="@android:color/white"
+        android:padding="8dp"
+        android:layout_marginRight="3dp"
+        />
+
+
+
+
+
+
+</RelativeLayout>

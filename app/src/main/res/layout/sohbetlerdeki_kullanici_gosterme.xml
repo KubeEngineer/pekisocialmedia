@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/kullanicilarprofilResmi_mesajlarda"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/people"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@+id/sohbetlerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/kullanicilarprofilResmi_mesajlarda"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/adSoyadProfil_mesajlarda"
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="Adi"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/onlinedurumu"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_below="@+id/sohbetlerLayout"
+        android:layout_toRightOf="@+id/kullanicilarprofilResmi_mesajlarda"
+        android:layout_toEndOf="@+id/kullanicilarprofilResmi_mesajlarda"
+        android:src="@drawable/onlinee"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

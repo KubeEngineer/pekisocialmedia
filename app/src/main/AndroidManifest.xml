@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chatpeki">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGEr" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_names"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".View.OzelSohbetActivity"
+            android:parentActivityName=".View.SohbetActivity" />
+        <activity android:name=".View.YorumActivity" />
+        <activity android:name=".View.BenimArkadaslarimActivity" />
+        <activity android:name=".View.DigerProfilActivity" />
+        <activity android:name=".View.PostSendActivity" />
+        <activity android:name=".View.AramaActivity" />
+        <activity android:name=".View.ProfilActivity" />
+        <activity android:name=".View.GrupSohbetActivity" />
+        <activity
+            android:name=".View.SohbetActivity"
+            android:theme="@style/MainPageAppBarStyle" />
+        <activity
+            android:name=".View.AnasayfaActivity"
+            android:theme="@style/MainPageAppBarStyle" />
+        <activity android:name=".View.Kayit_olActivity" />
+        <activity android:name=".View.LoginActivity" />
+        <activity android:name=".View.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

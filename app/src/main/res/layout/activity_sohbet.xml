@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.SohbetActivity">
+
+    <FrameLayout
+        android:id="@+id/Fragment_container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar1"
+        />
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_bottom_bar"
+        app:menu="@menu/sohbetler_bottom_menu"
+        app:itemIconTint="#ffff"
+        app:itemTextColor="#ffff"
+        />
+
+
+
+</RelativeLayout>

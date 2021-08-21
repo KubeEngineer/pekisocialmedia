@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.LoginActivity"
+    android:background="@color/colorPrimaryDark"
+    android:padding="18dp">
+
+
+    <ImageView
+        android:layout_width="391dp"
+        android:layout_height="159dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/epostaText"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:background="@android:color/white"
+        android:hint="@string/eposta"
+        android:textColorHint="@color/textHintColor"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/sifreText"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        android:background="@android:color/white"
+        android:inputType="textPassword"
+        android:hint="@string/sifre"
+        android:textColorHint="@color/textHintColor"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/girisyap"
+        android:layout_width="178dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:background="@android:color/white"
+        android:text="@string/girisYap"
+        android:textAlignment="center"
+        android:textColor="#007776"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/sifremiunuttum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sifremi_unuttum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:onClick="sifremiunuttum"
+        />
+    <TextView
+        android:id="@+id/kayit_sayfasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kayit_ol"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="460dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:onClick="kayitol_sayfasi"/>
+
+</RelativeLayout>

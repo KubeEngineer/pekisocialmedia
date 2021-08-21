@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/mesajlaragit"
+        android:icon="@drawable/send"
+        app:showAsAction="always"
+        android:title="Sohbetler"/>
+    <item android:id="@+id/gruplaraGit"
+        android:icon="@drawable/friends"
+        app:showAsAction="always"
+        android:title="Gruplar"/>
+</menu>
